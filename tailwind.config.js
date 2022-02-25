@@ -15,6 +15,7 @@ module.exports = {
         "p-secondary": "var(--p-secondary)",
         "p-bg-color": "var(--p-bg-color)",
         "p-input-color": "var(--p-input-Color)",
+        "p-success": "var(--p-success)",
       },
     },
   },

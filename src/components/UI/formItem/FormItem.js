@@ -1,8 +1,8 @@
-import { Form } from 'antd';
+import { Form } from "antd";
 
 const FormItem = ({ children, ...props }) => {
   return (
-    <Form.Item labelCol={{ span: 8 }} {...props}>
+    <Form.Item labelCol={{ span: 6 }} {...props}>
       {children}
     </Form.Item>
   );

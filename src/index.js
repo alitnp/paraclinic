@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "styles/global.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider } from "antd";
@@ -10,7 +10,7 @@ import { store } from "redux/store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ConfigProvider local={faIR} direction="rtl">
+    <ConfigProvider locale={faIR} direction="rtl">
       <Provider store={store}>
         <App />
       </Provider>

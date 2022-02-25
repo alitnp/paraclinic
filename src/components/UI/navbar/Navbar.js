@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="h-12 shadow-md bg-gradient-to-bl from-p-primary to-p-secondary">
+    <header className="fixed top-0 left-0 z-50 w-full h-12 shadow-lg bg-gradient-to-bl from-p-primary to-p-secondary">
       <ContentWrapper>
         <div className="container flex items-center justify-between h-full mx-auto text-white ">
           <h1 className="mb-0 text-lg text-inherit">پاراکلینیک</h1>

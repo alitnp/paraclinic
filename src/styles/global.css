@@ -5,42 +5,42 @@
     font-family: IRANSans;
     font-style: normal;
     font-weight: 900;
-    src: url('./asset/fonts/IRANSansWeb_Black.woff2') format('woff2');
+    src: url('../asset/fonts/IRANSansWeb_Black.woff2') format('woff2');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: bold;
-    src: url('./asset/fonts/IRANSansWeb_Bold.woff2') format('woff2');
+    src: url('../asset/fonts/IRANSansWeb_Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 500;
-    src: url('./asset/fonts/IRANSansWeb_Medium.woff2') format('woff2');
+    src: url('../asset/fonts/IRANSansWeb_Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 300;
-    src: url('./asset/fonts/IRANSansWeb_Light.woff2') format('woff2');
+    src: url('../asset/fonts/IRANSansWeb_Light.woff2') format('woff2');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: 200;
-    src: url('./asset/fonts/IRANSansWeb_UltraLight.woff2');
+    src: url('../asset/fonts/IRANSansWeb_UltraLight.woff2');
 }
 
 @font-face {
     font-family: IRANSans;
     font-style: normal;
     font-weight: normal;
-    src: url('./asset/fonts/IRANSansWeb.woff2') format('woff2');
+    src: url('../asset/fonts/IRANSansWeb.woff2') format('woff2');
 }
 
 :root {
@@ -53,6 +53,7 @@
     --p-secondary: #1690c9;
     --p-bg-color: #ffffff;
     --p-input-Color: #6180bb;
+    --p-success: #52c41a;
 }
 
 html,
@@ -88,4 +89,20 @@ body {
 .ant-form-rtl .ant-form-item-label {
     direction: rtl !important;
     text-align: right !important;
+}
+
+@media print {
+    * {
+        visibility: hidden;
+    }
+    .printable {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10mm;
+    }
+    .printable * {
+        visibility: visible;
+    }
 }
